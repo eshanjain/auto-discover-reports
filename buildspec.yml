@@ -28,19 +28,6 @@ phases:
       - echo "Running post-build steps..."
       - echo "Build completed on `date`"
 
-
-reports:
-  failed-case-t:
-    files:
-      - "**/*"
-    base-directory: 'test-reports'
-    file-format: JunitXml
-  failed-case-cc:
-    files:
-      - "**/*"
-    base-directory: 'coverage'
-    file-format: CLOVERXML
-
 artifacts:
   files:
     - 'test-reports/**/*'
